@@ -23,3 +23,5 @@ The config is quite simple, you just need to set both of the themes and the hour
 ```
 
 ## Todos
+
+-[ ] Make the hour more precise
