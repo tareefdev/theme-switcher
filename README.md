@@ -1,15 +1,16 @@
 # Emacs Theme Switcher
 
-A simple program that switches betweentwo themes at the desired time
+A simple program that switches between two themes at the desired time
 
 ## How to use it
 
 The config is quite simple, you just need to set both of the themes and the hours when you want the theme to switch  
 
-`light-theme` is the day theme  
-`dark-theme` is the night theme  
-`morning-hour` is the hour of the switch in the morning  
-`evening-hour` is the hour of the switch in the evening  
+`light-theme` is the day theme.  
+`dark-theme` is the night theme.  
+
+`morning-hour` is the hour of the switch in the morning.  
+`evening-hour` is the hour of the switch in the evening.  
 
 
 ``` emacs-lisp
