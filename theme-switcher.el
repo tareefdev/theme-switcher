@@ -57,7 +57,7 @@ example : (setq evening-hour 18) for 6pm")
 
 (defun theme-switcher ()
   "switch theme from spacemacs-light to spacemacs-dark"
-  (let ((now (string-to-number (format-time-string "%h"))))
+  (let ((now (string-to-number (format-time-string "%H"))))
 	(if (and (>= now morning-hour) (<= now evening-hour))
 		(switch-to-theme light-theme)
 	  (switch-to-theme dark-theme))
