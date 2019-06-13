@@ -14,6 +14,8 @@ The config is quite simple, you just need to set both of the themes and the hour
 
 
 ``` emacs-lisp
+(require 'theme-switcher)
+
 ;; Set the light and dark theme
 (setq light-theme 'spacemacs-light)
 (setq dark-theme 'spacemacs-dark)
