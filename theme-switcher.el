@@ -51,16 +51,17 @@ example : (setq evening-hour 18) for 6pm")
 
 (defun switch-to-theme (switch-to)
   "disable all themes and load the theme in the argument"
-  (while custom-enabled-themes
-	(disable-theme (car custom-enabled-themes)))
-  (load-theme switch-to))
+  (unless (member switch-to custom-enabled-themes)
+	(while custom-enabled-themes
+	  (disable-theme (car custom-enabled-themes)))
+	(load-theme switch-to)))
 
 (defun theme-switcher ()
-  "switch theme from spacemacs-light to spacemacs-dark"
+  "switch themes depending on the hour of the day"
   (let ((now (string-to-number (format-time-string "%H"))))
 	(if (and (>= now morning-hour) (<= now evening-hour))
-		(switch-to-theme light-theme)
-	  (switch-to-theme dark-theme))
+		  (switch-to-theme light-theme)
+		(switch-to-theme dark-theme))
 	nil))
 
 (run-with-timer 0 (* 1 60) 'theme-switcher)
