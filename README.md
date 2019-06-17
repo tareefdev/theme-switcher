@@ -12,7 +12,6 @@ The config is quite simple, you just need to set both of the themes and the hour
 `morning-hour` is the hour of the switch in the morning.  
 `evening-hour` is the hour of the switch in the evening.  
 
-
 ``` emacs-lisp
 (require 'theme-switcher)
 
@@ -28,3 +27,4 @@ The config is quite simple, you just need to set both of the themes and the hour
 ## Todos
 
 - [ ] Make the hour more precise
+- [ ] Create a minor mode ?
