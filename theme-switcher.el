@@ -1,4 +1,4 @@
-;;; theme-switcher.el
+;;; theme-switcher.el --- Automatic theme switching
 
 ;; Author: Henry MATHEISEN
 ;; URL: https://github.com/hmatheisen/theme-switcher
