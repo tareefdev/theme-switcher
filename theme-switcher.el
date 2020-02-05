@@ -31,20 +31,20 @@
 
 ;;; Code:
 
-(defvar light-theme nil
+(defvar day-theme nil
   "The light theme to switch to during the day.
 example : (setq light-theme 'spacemacs-light)")
 
-(defvar dark-theme nil
+(defvar night-theme nil
   "The dark theme to switch to during the day.
 example : (setq dark-theme 'spacemacs-dark)")
 
-(defvar morning-hour 08
+(defvar day-hour 08
   "The hour when the theme goes from dark to light in the morning.
 Default is 8am.
 example : (setq morning-hour 07) for 7am")
 
-(defvar evening-hour 17
+(defvar night-hour 17
   "The hour when the theme goes from light to dark in the evening.
 Default is 5pm.
 example : (setq evening-hour 18) for 6pm")
@@ -59,9 +59,9 @@ example : (setq evening-hour 18) for 6pm")
 (defun theme-switcher ()
   "Switch themes depending on the hour of the day."
   (let ((now (string-to-number (format-time-string "%H"))))
-	(if (and (> now morning-hour) (< now evening-hour))
-		(switch-to-theme light-theme)
-	  (switch-to-theme dark-theme))
+	(if (and (> now day-hour) (< now night-hour))
+		(switch-to-theme day-theme)
+	  (switch-to-theme night-theme))
 	nil))
 
 (run-with-timer 0 (* 1 60) 'theme-switcher)

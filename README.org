@@ -6,22 +6,22 @@ A simple program that switches between two themes at the desired time
 
 The config is quite simple, you just need to set both of the themes and the hours when you want the theme to switch  
 
-=light-theme= is the day theme.  
-=dark-theme= is the night theme.  
+=day-theme= is the day theme.  
+=night-theme= is the night theme.  
 
-=morning-hour= is the hour of the switch in the morning.  
-=evening-hour= is the hour of the switch in the evening.  
+=day-hour= is the hour of the switch in the morning.  
+=night-hour= is the hour of the switch in the evening.  
 
 #+BEGIN_SRC emacs-lisp
 (require 'theme-switcher)
 
 ;; Set the light and dark theme
-(setq light-theme 'spacemacs-light)
-(setq dark-theme 'spacemacs-dark)
+(setq day-theme 'spacemacs-light)
+(setq night-theme 'spacemacs-dark)
 
 ;; Set the hour when you want the theme to switch
-(setq morning-hour 07)
-(setq evening-hour 18)
+(setq day-hour 07)
+(setq night-hour 18)
 #+END_SRC
 
 ** Todos
