@@ -4,30 +4,33 @@
 ;; URL: https://github.com/hmatheisen/theme-switcher
 ;; Version: 0.0.1
 
-;; This file is part of GNU Emacs.
+;; This file is not part of GNU Emacs.
 
 ;; This file is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 3, or (at your option)
-;; any later version.
+;; it under the terms of the GNU General Public License as published
+;; by the Free Software Foundation; either version 3, or (at your
+;; option) any later version.
 
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
+;; This program is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; General Public License for more details.
 
-;; For a full copy of the GNU General Public License
-;; see <https://www.gnu.org/licenses/>.
+;; For a full copy of the GNU General Public License see
+;; <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
-;; This package allow a user to switch from one theme to another at desired hours
-;; This is useful if, like me, you like a light theme during the day and a dark theme at night
+;; This package allow a user to switch from one theme to another at
+;; desired hours This is useful if, like me, you like a light theme
+;; during the day and a dark theme at night
 ;;
-;; The code is inspired by moe-theme-switcher.el that you can find here : https://github.com/kuanyui/moe-theme.el/blob/master/moe-theme-switcher.el
+;; The code is inspired by moe-theme-switcher.el that you can find
+;; here :
+;; https://github.com/kuanyui/moe-theme.el/blob/master/moe-theme-switcher.el
 ;;
-;; A minor mode could be provided to enable/disable the switch
-;; Also the time could be more precise than juste the hour
+;; A minor mode could be provided to enable/disable the switch Also
+;; the time could be more precise than juste the hour
 
 ;;; Code:
 
