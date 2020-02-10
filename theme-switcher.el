@@ -67,6 +67,18 @@ example : (setq evening-hour 18) for 6pm")
 	  (switch-to-theme night-theme))
 	nil))
 
+(defun change-day-theme (theme)
+  "Change the day theme interactively to THEME."
+  (interactive (list (intern (completing-read "Theme: " (custom-available-themes)))))
+  (setq day-theme theme)
+  (switch-to-theme theme))
+
+(defun change-night-theme (theme)
+  "Change the night theme interactively to THEME."
+  (interactive (list (intern (completing-read "Theme: " (custom-available-themes)))))
+  (setq night-theme theme)
+  (switch-to-theme theme))
+
 (run-with-timer 0 (* 1 60) 'theme-switcher)
 
 (provide 'theme-switcher)
