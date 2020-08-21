@@ -83,9 +83,7 @@ example : (setq evening-hour 18) for 6pm")
   "Toggle between the day and night theme."
   (interactive)
   ; swap `day-theme' and `night-theme' variables
-  (setq day-theme (prog1
-                      night-theme
-                    (setq night-theme day-theme)))
+  (setq day-theme (prog1 night-theme (setq night-theme day-theme)))
   (theme-switcher))
 
 (run-with-timer 0 (* 1 60) 'theme-switcher)
