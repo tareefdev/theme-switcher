@@ -1,3 +1,5 @@
+* Author: Henry MATHEISEN
+I just cannot find it anymore under his profile, so I upload it here since it's GPL 3
 * Emacs Theme Switcher
 
 A simple program that switches between two themes at the desired time
